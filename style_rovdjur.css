@@ -45,13 +45,13 @@ h4{
     display: none;
 }
 
-.boxWrap { /* Omgivande element */
+/* .boxWrap { 
     position: relative;
     display: inline-block;
     margin-right: 2em;
 }
 
-.boxWrap div { /* Inre box */
+.boxWrap div { 
     position: absolute;
     border: 2px solid #000000;
     margin: 0;
@@ -72,7 +72,7 @@ h4{
 }
 #showbox1:checked ~ div {
     transform: scaleY(1);
-}
+} */
 
 
 left ul {
@@ -97,20 +97,18 @@ body{
 
 header{
     grid-area: header;
-    background-image: url(../Rovdjur/images/skogen.png\'.png);
+    background-image: url('../images/skogen.png');
     background-size: cover;
     background-position:center;
 }
 
 left{
     grid-area: left;
-    background-color: rgb(207, 207, 204);
     padding: 15px;
 }
 
 right{
     grid-area: right;
-    background-color: rgb(207, 207, 204);
 }
 
 main{
@@ -121,7 +119,6 @@ main{
 
 footer{
     grid-area: footer;
-    background-color: rgb(207, 207, 204);
     
 }
 
@@ -151,7 +148,7 @@ img{
 
     #menuicon {
         display: inline-block;
-        background-image: url(../Rovdjur/images/menuicon.png);
+        background-image: url('../images/menuicon.png');
         width: 24px;
         height: 24px;
         cursor: pointer;
@@ -175,6 +172,7 @@ img{
     nav{
         display: inline;
     }
+
     left ul{
     flex-direction: column;
 }
