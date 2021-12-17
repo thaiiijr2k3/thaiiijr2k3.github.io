@@ -52,11 +52,11 @@ p{
 
 .boxWrap{
     position: relative;
-    display: inline-block;
+    display: block;
     margin-right: 2em;
 }
 
-#box1{
+#showbox1{
     display: none;
 }
 
@@ -66,6 +66,58 @@ p{
     transition: transform 0.5s;
 }
 #showbox1:checked ~ div {
+    transform: scaleY(1);
+}
+
+#showbox2{
+    display: none;
+}
+
+#showbox2 ~ div {
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+#showbox2:checked ~ div {
+    transform: scaleY(1);
+}
+
+#showbox3{
+    display: none;
+}
+
+#showbox3 ~ div {
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+#showbox3:checked ~ div {
+    transform: scaleY(1);
+}
+
+#showbox4{
+    display: none;
+}
+
+#showbox4 ~ div {
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+#showbox4:checked ~ div {
+    transform: scaleY(1);
+}
+
+#showbox5{
+    display: none;
+}
+
+#showbox5 ~ div {
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+#showbox5:checked ~ div {
     transform: scaleY(1);
 }
 
